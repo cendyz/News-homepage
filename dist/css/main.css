@@ -257,7 +257,7 @@ body {
 @media (min-width: 1440px) {
   .wrapper {
     padding: 3em 0;
-    max-width: 83em;
+    max-width: 75em;
   }
   .shadow {
     display: none;
@@ -292,22 +292,28 @@ body {
   }
   .header {
     grid-area: 1/1/2/3;
-    margin-top: 1em;
     margin-top: 0;
+    margin-bottom: 2em;
   }
   .one {
-    display: flex;
-    -moz-column-gap: 10em;
-         column-gap: 10em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-area: 2/1/3/3;
+    height: 100%;
   }
   .one__title {
-    margin: auto 0;
-    font-size: 5.24rem;
+    margin-bottom: 0;
+    padding-right: 1.5em;
+    grid-area: 1/1/2/2;
+    font-size: 5.3rem;
     line-height: 1;
   }
+  .one__box {
+    grid-area: 1/2/2/3;
+  }
   .one__text {
-    font-size: 1.7rem;
+    margin-bottom: 0;
+    font-size: 1.6rem;
   }
   .one__btn {
     margin-bottom: auto;
